@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 200, height: 100)
 
 /*:
  ## Add your code below
@@ -24,8 +24,30 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
+// illustrate random noise generation
+for x in stride(from: 0, to: 200, by: 1) {
+    //decide how tall to draw the line
+    let toY = random(from: 0, toButNotIncluding: 101)
+    //DRAW a vertical line
+    canvas.drawLine(fromX: x, fromY: 0, toX: x, toY: toY)
+}
 
+//learn about data type
+var name = "Lakefield" //assignment statement
+name = "Lakefield College School"
 
+//create a number
+let value = 4 //type inference gusses integer
+let anotherValue : Int = 5
+
+//create a number that is not an integer
+var decimalValue = 4.5
+decimalValue = 5
+var anotherDecimalValue: Double = 5.5
+
+// what are the maximun and minimum possible values?
+Int.min
+Int.max
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
