@@ -23,8 +23,18 @@ let canvas = Canvas(width: 400, height: 300)
  Use whitespace and comments as appropriate.
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
+var start = 0.01
+start = 0.1
+var p = PerlinGenerator()
+for x in stride(from: 0, to: 300, by: 3){
+start += 0.01
+var randomValue = p.perlinNoise(x: start)
+    var height = map(value: randomValue, fromLower: -1, fromUpper: 1, toLower: 0, toUpper: 100)
+    let i = Int(height)
+    canvas.lineColor = Color(hue: 0, saturation: 100, brightness: i, alpha: 100)
+    canvas.drawLine(fromX: x, fromY: 10, toX: x+100, toY: i+20)
 
-
+}
 
 /*:
  ## Use source control
