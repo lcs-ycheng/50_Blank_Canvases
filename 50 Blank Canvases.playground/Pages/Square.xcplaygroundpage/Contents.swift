@@ -27,25 +27,13 @@ canvas.translate(byX: 25, byY: 50)
 canvas.drawAxes()
 canvas.defaultLineWidth = 5
 
-//draw a side and rotate
-canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
-canvas.translate(byX: 200, byY: 0)
-canvas.rotate(by: 90)
-
-//draw a side and rotate
-canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
-canvas.translate(byX: 200, byY: 0)
-canvas.rotate(by: 90)
-
-//draw a side and rotate
-canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
-canvas.translate(byX: 200, byY: 0)
-canvas.rotate(by: 90)
-
-//draw a side and rotate
-canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
-canvas.translate(byX: 200, byY: 0)
-canvas.rotate(by: 90)
+//Use a loop to draw four sides
+for _ in 1...4 {//loops four times creates no variable
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
+    canvas.translate(byX: 200, byY: 0)
+    canvas.rotate(by: 90)
+}
+    
 
 /*:
  ## Use source control
