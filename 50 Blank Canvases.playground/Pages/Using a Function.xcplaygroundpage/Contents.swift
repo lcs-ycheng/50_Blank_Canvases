@@ -1,5 +1,5 @@
 //: [Previous](@previous) / [Next](@next)
-//: # A Blank Canvas
+//: # Using a function
 //:
 //: Use this page to experiment. Have fun!
 /*:
@@ -22,10 +22,26 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-
-
-
+func drawRegularPolygon(withSides: Int, sideLength: Int, startX: Int, startY: Int){
+//find interior angle
+let interior = (withSides - 2)*180/withSides
+//find exterior angle
+    let exterior = 180 - interior
+    
+    //move to the starting position
+    canvas.translate(byX: startX, byY: startY)
+    
+    //loop for however many sides we have
+    for _ in 1...withSides{
+        //Draw the line
+        canvas.drawLine(fromX: 0, fromY: 0, toX: sideLength, toY: 0)
+        //translate to end of the line (move the line turtle)
+        canvas.translate(byX: sideLength, byY: 0)
+        //rotate
+        canvas.rotate(by: Degrees(exterior))
+    }
+}
+drawRegularPolygon(withSides: 10, sideLength: 40, startX: 50, startY: 60)
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
