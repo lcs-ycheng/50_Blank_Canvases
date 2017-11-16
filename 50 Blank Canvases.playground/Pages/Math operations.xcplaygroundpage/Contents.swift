@@ -35,7 +35,7 @@ let deltaX = x1-x2
 //Get difference of the y's
 let deltaY = y1-y2
 //Get the sum of the squares
-let sumOfSquare = pow(deltaX, 2) + pow(deltaY, 2)
+let sumOfSquare = pow(deltaX, 2) + pow(deltaY, 2)
 //finally, evalluate the square root
 let result = sqrt(sumOfSquare)
 
