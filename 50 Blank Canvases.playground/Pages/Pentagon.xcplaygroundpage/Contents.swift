@@ -22,8 +22,17 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+// Move to the starting point
+canvas.translate(byX: 60, byY: 60)
+canvas.drawAxes()
+canvas.defaultLineWidth = 5
 
+//Use a loop to draw four sides
+for _ in 1...5 {//loops four times creates no variable
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 100, toY: 0)
+    canvas.translate(byX: 100, byY: 0)
+    canvas.rotate(by: 72)
+}
 
 
 /*:
