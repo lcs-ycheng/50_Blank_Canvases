@@ -22,8 +22,22 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-
+// declare my age
+let age: Int = 16
+//declare the average age
+var PersonAge: Int = 30
+PersonAge += age //personAge + my age = 46
+PersonAge /= 2 //divide the total age is 23
+let averageAge = Double(PersonAge) //call for the average
+//call the testNumber
+var testNumber: Int = 20
+var evenOdd = Int(testNumber * 2)
+// call the answer
+var answer: Int = 0
+answer += 1
+answer += 10
+answer *= 10
+answer >> 3
 
 
 /*:

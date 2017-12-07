@@ -22,10 +22,18 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-
-
-
+//First mini-challenge
+let firstname = "Yaming"
+let lastname = "Cheng"
+let fullname = firstname + lastname
+let myDetails = "Hi, my name is \(fullname). Nice to meet you!"
+print(myDetails)
+//Second mini-challenge
+var weather = (year: 27, month: 1, date: 2)
+var year = weather.year
+var month = weather.month
+var date = weather.date
+var averageWeather = (weather.year + weather.month + weather.date)/3
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
